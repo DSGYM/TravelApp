@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/afaa4378ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Travel App</title>
+  </head>
+
+  <body>
+    <nav id="nav">
+      <div class="logo"><i class="fas fa-plane-departure"></i> ATT</div>
+      <ul id="nav_right">
+        <li><a href="#plan">About</a></li>
+        <li><a href="#trips">Plan your trip</a></li>
+      </ul>
+    </nav>
+
+    <section id="plan">
+      <div class="information">
+        <h2>ATT</h2>
+        <h3>Alternative travel time</h3>
+        <p>
+          Plan your holidays with this app - without getting wet. ATT allows you
+          to keep a dynamic eye on the weather for your travel destinations - so
+          you don't have to carry a sun hat and rubber boots in the same
+          suitcase. You can only plan your trip for the next 14 days (maximum of
+          the weather forecast)
+        </p>
+        <input type="submit" value="Plan your trip!" id="start_plan" />
+      </div>
+    </section>
+
+    <section id="trips">
+      <div class="trip">
+        <div class="suitcase">
+          <i class="fas fa-suitcase-rolling fa-10x"></i>
+        </div>
+        <div class="timing">
+          <h2>Plan you trip</h2>
+          <input type="text" placeholder="Departure" id="departure" />
+          <input type="text" placeholder="Destination" id="destination" />
+          <input type="date" placeholder="Departure Date" id="date" />
+          <input type="submit" value="Submit" id="submit_trip" />
+          <p id="error">
+            Error: Please fill out everything correct.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="result" class="invisible"></section>
+
+    <footer id="footer">&copy; Markus Lang 2020</footer>
+  <script type="text/javascript" src="main.js"></script></body>
+</html>

@@ -21,11 +21,7 @@ app.get("/", (req, res) => {
 app.post("/add", addInfo);
 
 function addInfo(req, res) {
-  data["departure"] = req.body.departure;
-  data["destination"] = req.body.destination;
-  data["temp"] = req.body.temp;
-  data["desc"] = req.body.desc;
-  data["daystotrip"] = req.body.daystotrip;
+  Object.assign(data, req.body);
   res.send(data);
 }
 
